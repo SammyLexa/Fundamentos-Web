@@ -52,7 +52,6 @@ main {
 .container{
     width: 75%;
     margin: 0 auto;
-    background-color: var(--cor-destaque);
     padding: 2rem;
     justify-content: center;
     
@@ -110,6 +109,18 @@ main {
     border-top: #000 2px solid;
     font-family: var(--fonte);
     font-size: var(--tamanho-paragrafo);
+}
+
+.caixa{
+    background-color: var(--cor-principal);
+    margin: 1rem;
+    border-radius: 40px;
+}
+
+.titulo__rosa{
+    color:#DE187E;
+    text-align: center;
+    font-size: var(--tamanho-titulo);
 }
 
 /*! contato aqui*/
