@@ -21,11 +21,13 @@ main {
 .cabecalho{
     background-color:  var(--cor-principal);
     align-items: center;
+    font-family: var(--fonte);
+
 }
 
 .cabecalho__menu{
     border: #000 2px solid;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .cabecalho__menu__lista{
