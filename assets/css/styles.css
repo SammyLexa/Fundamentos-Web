@@ -79,18 +79,10 @@ main {
     width: 25%;
     border: var(--cor-secundaria) solid 3px;
     align-items: start;
-    
+    margin-right: 1rem;
 }
 
-@media (max-width: 700px) {
-    main {
-        flex-direction: column-reverse;
-        
-    }
-    .foto{
-        margin-top: 1rem;
-    }
-}
+
 .destaque{
     color: var(--cor-secundaria)
 }
@@ -157,7 +149,29 @@ main {
     .formulario{
         width: 90%;
     }
-    
+    .paragrafo{
+        padding: 0px;
+        text-align: center;
+    }
+    .foto{
+        width: 70%;
+
+    }
+
+    .container{
+        width: 100%;
+        padding: 8px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        
+    }
+
+    .foto{
+        margin-top: 1rem;
+        margin-right: 0rem;
+    }
 }
 
 .mapa{
@@ -167,3 +181,4 @@ main {
     display: block;
     margin-bottom: 1rem;
 }
+

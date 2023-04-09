@@ -32,21 +32,36 @@
 
         <form class="formulario">
             <label for="nome">Nome:</label> 
-            <input type="text" id="nome" />
+            <input type="text" id="nome" onkeyup="validaNome()"/>
+            <div id="txtNome"></div>
 
             <label for="email">E-mail:</label> 
-            <input type="email" id="email" />
+            <input type="email" id="email" onkeyup="validaEmail()"/>
+            <div id="txtEmail"></div>
 
             <label for="assunto">Assunto:</label> 
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-                
-            <button class="botao__formulario">Enviar</button>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>    
+
+            <button class="botao__formulario" onclick="enviar()">Enviar</button>
 
         </form>
     
         <h2 class="titulo">Endereço qualquer:</h2>
     
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1731191316826!2d-46.683272685544026!3d-23.52627506618147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57e2c76909dd%3A0xf741c6e7df1fd020!2sTeatro%20Bradesco!5e0!3m2!1spt-BR!2sbr!4v1680783214557!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="mapa" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1731191316826!2d-46.683272685544026!3d-23.52627506618147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57e2c76909dd%3A0xf741c6e7df1fd020!2sTeatro%20Bradesco!5e0!3m2!1spt-BR!2sbr!4v1680783214557!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer class="footer">
+            <p> Desenvolvido por Samantha Alexandra</p>
+            <div class="botao">
+                <a href = "mailto:samanthapereira.contato@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+            </div>
+            <div class="botao">
+                <a href="https://www.linkedin.com/in/samantha-alexandra-pereira/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+            </div>
+    
+    </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
